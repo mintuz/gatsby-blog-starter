@@ -5,6 +5,8 @@ This starter ships with the following technology choices
 * Sass
 * MDX
 * Pagination
+* PrismJS
+* PostCSS
 
 ## 🚀 Quick start
 
