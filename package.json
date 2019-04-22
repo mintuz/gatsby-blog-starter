@@ -1,0 +1,67 @@
+{
+  "name": "mintuz-2019",
+  "private": true,
+  "description": "Personal blog for 2019 and beyond",
+  "version": "0.1.0",
+  "author": "Adam Bulmer <github@mintuz.com",
+  "bugs": {
+    "url": "https://github.com/mintuz/mintuz-2019/issues"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.0.10",
+    "@mdx-js/react": "^1.0.6",
+    "@mdx-js/tag": "^0.20.3",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.3.25",
+    "gatsby-image": "^2.0.39",
+    "gatsby-mdx": "^0.6.2",
+    "gatsby-paginate": "^1.0.17",
+    "gatsby-plugin-feed": "^2.1.1",
+    "gatsby-plugin-google-analytics": "^2.0.18",
+    "gatsby-plugin-manifest": "^2.0.29",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.0.35",
+    "gatsby-plugin-sitemap": "^2.0.12",
+    "gatsby-plugin-typography": "^2.2.13",
+    "gatsby-prismjs-dracula": "^0.1.15",
+    "gatsby-remark-copy-linked-files": "^2.0.11",
+    "gatsby-remark-images": "^3.0.10",
+    "gatsby-remark-prismjs": "^3.2.8",
+    "gatsby-remark-responsive-iframe": "^2.1.1",
+    "gatsby-remark-smartypants": "^2.0.9",
+    "gatsby-source-filesystem": "^2.0.29",
+    "gatsby-transformer-remark": "^2.3.8",
+    "gatsby-transformer-sharp": "^2.1.18",
+    "prismjs": "^1.16.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
+    "sass-mq": "^5.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0",
+    "react-testing-library": "^6.1.2",
+    "cssnano": "^4.1.10",
+    "autoprefixer": "^9.5.1"
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+  },
+  "scripts": {
+    "image-resize": "sips --resampleWidth 600 src/posts/**/*.jpg && sips --resampleWidth 600 src/posts/**/*.png",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --single-quote --tab-width=4 --print-width=80 \"./src/**/*.js\" \"./test/**/*js\" \"./gatsby-*.js\" --write",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  }
+}
