@@ -9,7 +9,7 @@ module.exports = {
         author: 'Adam Bulmer',
         siteUrl: 'https://mintuz.com',
         social: {
-            twitter: `mintuz`,
+            twitter: 'mintuz',
             github: 'mintuz'
         },
         description:

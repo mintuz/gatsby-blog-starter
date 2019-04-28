@@ -1,26 +1,21 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 function Bio() {
+    const data = useStaticQuery(bioQuery);
+    const { author, social } = data.site.siteMetadata;
+
     return (
-        <StaticQuery
-            query={bioQuery}
-            render={data => {
-                const { author, social } = data.site.siteMetadata;
-                return (
-                    <div>
-                        <p>
-                            Written by <strong>{author}</strong> who lives and
-                            works in Manchester building useful things.
-                            {` `}
-                            <a href={`https://twitter.com/${social.twitter}`}>
-                                You should follow him on Twitter
-                            </a>
-                        </p>
-                    </div>
-                );
-            }}
-        />
+        <div>
+            <p>
+                Written by <strong>{author}</strong> who lives and
+                works in Manchester building useful things.
+                {` `}
+                <a href={`https://twitter.com/${social.twitter}`}>
+                    You should follow him on Twitter
+                </a>
+            </p>
+        </div>
     );
 }
 
